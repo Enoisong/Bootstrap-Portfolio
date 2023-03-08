@@ -6,35 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <title>Document</title>
+    <style>
+      .nav-link{
+        color: #000;
+      }
+    </style>
 </head>
+
 <body>
-    <header class="navbar bg-white d-none d-sm-none d-md-flex justify-content-md-around">
-        <p class="my-logo-title fs-2 fw-bolder">My Logo</p>
-    
-    <div class="container mt-3">       
-        <p class="text-end"> </p>
-        <ul class="nav justify-content-end">
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-dark ">
+      <div class="container-fluid">
+        <a class="navbar-brand text-primary px-5" href="#">My logo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 my-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="#">Portfolio</a>
+            <a class="nav-link" href="#works">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#about-myself">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Content</a>
-          </li>          
+            <a class=" nav-link" href="#contact">Contact</a>
+          </li>
         </ul>
       </div>
-    </header>
+        </div>
+    </nav>
+  </header>
+ 
         <main>
-<section class="row section-1 p-5 container-fluid">
-        <div class="col-md-3"></div>             
-        <div class="col-md-6 d-md-flex flex-md-column align-items-md-start m-5">
-            <h1 class="fw-bolder">I’m Enobong <br> Glad to see you!</h1>
-            <p class="fw-light">I’m a software developer! I can help you build a product,
+ <section class="intro p-5 container-fluid" style="background-image: url(header.png); height: 100vh">
+         <p class="h1 p-5 mt-5">I’m Enobong <br> Glad to see you! </p>         
+
+            <p class="fw-light px-5">I’m a software developer! I can help you build a product,
                    feature or website Look through <br> some of my work and experience! 
                    If you like what you see and have a project you need <br> coded, don’t hesitate to contact me.</p>   
+          <p class="text-primary p-5">LET'S CONNECT</p>
 
+          <div class="d-flex flex-row px-5 ">
+            <div>
+            <img class="p-2" src="Vector (1).png" alt="">
+          </div>
+          <div>
+            <img class="p-2" src="Vector.png" alt="">
+          </div>
+          <div>
+            <img class="p-2" src="Linkedin icon.png" alt="">
+          </div>
+        </section>
  <!------------card container------------>
 
  <section id="works" class="container-fluid works bg-dlight px-5 py-5">
@@ -42,7 +66,7 @@
   <div class="container card " style="max-width: 1040px; background-image: url();">
     <div class="row">
       <div class="col-md-6">
-        <img src="/images.png" class="img-fluid rounded-start p-3" alt="portfolio image1">
+        <img src="tonic2.png" class="img-fluid rounded-start p-3" alt="portfolio image1">
       </div>
       <div class="col-md-6">
         <div class="card-body">
@@ -63,7 +87,7 @@
   <div class="container card mt-5 gap-3 " style="max-width: 1040px;">
     <div class="row">
       <div class="row-reverse col-md-6">
-        <img src="images/tonic3.png" class="img-fluid rounded-start p-3" alt="portfolio image1">
+        <img src="tonic3.png" class="img-fluid rounded-start p-3" alt="portfolio image1">
       </div>
       <div class="col-md-6">
         <div class="card-body">
@@ -84,7 +108,7 @@
   <div class="container card mt-5 gap-3 " style="max-width: 1040px;">
     <div class="row">
       <div class="row-reverse col-md-6">
-        <img src="images/uber.png" class="img-fluid rounded-start p-3" alt="portfolio image1">
+        <img src="uber.png" class="img-fluid rounded-start p-3" alt="portfolio image1">
       </div>
       <div class="col-md-6">
         <div class="card-body">
@@ -105,7 +129,7 @@
   <div class="container card mt-5 gap-3 " style="max-width: 1040px;">
     <div class="row">
       <div class="row-reverse col-md-6">
-        <img src="images/mtp.png" class="img-fluid rounded-start p-3" alt="portfolio image1">
+        <img src="mtp.png" class="img-fluid rounded-start p-3" alt="portfolio image1">
       </div>
       <div class="col-md-6">
         <div class="card-body">
@@ -121,6 +145,29 @@
       </div>
     </div>
   </div>
+</section>
+<section class="container-fluid p-5">
+<p class="h2">About myself</p>
+<p class="col-md-6">
+  I’m a software developer! I can help you build a product , feature or website Look through some of my work and
+  experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+</p>
+<p class="text-primary">LET'S CONNECT</p>
+<div class="d-flex flex-row">
+  <div>
+  <img class="p-2" src="Vector (1).png" alt="">
+</div>
+<div>
+  <img class="p-2" src="Vector.png" alt="">
+</div>
+<div>
+  <img class="p-2" src="Linkedin icon.png" alt="">
+</div>
+<button class="btn btn-outline-primary my-5">
+  Get My Resume
+</button>
+</section>
+
 </section>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script> 
 </body>
